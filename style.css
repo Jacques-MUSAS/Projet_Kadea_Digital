@@ -1,0 +1,187 @@
+ *{
+    box-sizing: content-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;  
+}
+
+nav .header__nav-list{
+    display: flex;
+    gap: 1rem; 
+}
+
+nav a {
+    font-weight: bold;
+    color:#282C34;
+}
+
+.footer__logo,
+.header__logo{
+    width: 40%;
+    height: 40%;
+}
+
+.main__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.main__intro-title{
+    padding: 1rem 0 1.5rem 0;
+    text-align: center;
+}
+
+section {
+    padding: 0 1rem;
+}
+
+.main__intro-image,
+.main__gallery-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.main__div--features{
+    background-color: #faf3e9;
+    
+}
+
+.main__feature{
+    border: 1px solid #3e3d3d;
+    margin-bottom: 1rem;
+    width : 90%;
+    height: 7rem;
+    padding: 1rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 100%;
+}
+
+p{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+button{
+    width: 35%;
+    height: 2rem;
+    background-color: #d92950;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.main__button{
+    margin:5% 2% 2% 0; 
+}
+
+.main__section--gallery{
+    background-color: #3e3d3d;
+}
+
+.main__gallery-content{
+    color: #ffffff;
+    margin-top: 1rem;
+}
+
+.main__section--details{
+    padding: 2rem;
+}
+
+.main__details-content{
+    margin-top: 2rem;
+}
+
+.main__details-text{
+    border: 2px solid #3e3d3d;
+    margin-bottom: 1rem;
+    height: auto;
+    padding: 1rem;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+.main__details-link{
+    margin-right: 30%;
+    color :#d92950;
+}
+
+.main__details-title,
+.main__form-title{
+    font-size: 120%;
+}
+
+.main__section--form{
+    background-color:#faf3e9;
+}
+
+.main__form{
+    padding: 1rem 5rem 0 0; 
+}
+
+.main__form div{
+    padding-bottom: 3%;
+}
+
+.main__form input{
+    width: 160%;
+    background-color:#faf3e9;
+    border-radius: 0.3em;
+}
+
+.main__form textarea{
+    width: 160%;
+    height: 5rem;
+    border-radius: 0.3rem;
+    background-color:#faf3e9;
+}
+
+.btn .button{
+    width: 120%;
+    height: 1.8rem; 
+}
+
+.btn{
+    padding-left: 3rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+footer .footer__socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0 0 4em;
+}
+
+footer .footer__social-icon{
+    width: 30%;
+    height: 30%;
+}
