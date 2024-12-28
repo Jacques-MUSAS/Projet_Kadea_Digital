@@ -29,7 +29,7 @@ nav a {
 .footer__logo,
 .header__logo{
     width: 40%;
-    height: 40%;
+    height: auto;
 }
 
 .main__section {
@@ -67,9 +67,9 @@ section {
 .main__feature{
     border: 1px solid #3e3d3d;
     margin-bottom: 1rem;
+    padding: 1rem;
     width : 90%;
     height: 7rem;
-    padding: 1rem;
 }
 
 h2{
@@ -78,18 +78,18 @@ h2{
 }
 
 p{
-    padding-top: 1rem;
     text-align: center;
+    padding-top: 1rem;
 }
 
 button{
-    width: 35%;
-    height: 2rem;
-    background-color: #d92950;
     border: none;
     border-radius: 0.5rem;
     font-weight: bold;
     color: #ffffff;
+    background-color: #d92950;
+    width: 35%;
+    height: 2rem;
 }
 
 .main__button{
@@ -98,6 +98,10 @@ button{
 
 .main__section--gallery{
     background-color: #3e3d3d;
+}
+
+.main__gallery-title{
+    font-size: 110%;
 }
 
 .main__gallery-content{
@@ -116,10 +120,8 @@ button{
 .main__details-text{
     border: 2px solid #3e3d3d;
     margin-bottom: 1rem;
-    height: auto;
     padding: 1rem;
-    flex-basis: auto;
-    flex-grow: 1;
+    height: auto;
 }
 
 .main__details-link{
@@ -133,7 +135,10 @@ button{
 }
 
 .main__section--form{
+    position: relative;
+    height: 25rem;
     background-color:#faf3e9;
+   
 }
 
 .main__form{
@@ -151,19 +156,21 @@ button{
 }
 
 .main__form textarea{
-    width: 160%;
-    height: 5rem;
     border-radius: 0.3rem;
     background-color:#faf3e9;
+    width: 160%;
+    height: 5rem;
 }
 
-.btn .button{
-    width: 120%;
+.btn  .btn__butonn{
+    width: 110%;
     height: 1.8rem; 
 }
 
 .btn{
-    padding-left: 3rem;
+    position: absolute;
+    top: 285%;
+    right: 22%;
 }
 
 footer{
@@ -184,4 +191,176 @@ footer .footer__socials{
 footer .footer__social-icon{
     width: 30%;
     height: 30%;
+}
+
+
+/* LA PARTIE MEDIA QUERY */
+
+@media screen and (min-width : 1280px) {
+    .header{
+         padding: 1em 6rem;
+         align-items: center;
+    } 
+    
+    nav a {
+        font-size: 150%;
+    }
+    
+    .footer__logo,
+    .header__logo{
+        width: 15%;
+        height: auto;
+    }
+   .main__section{
+        display: flex;
+        flex-direction: row;
+        padding: 6rem 6rem;
+   }
+
+   .main__intro-content{
+        width: 45%;
+        padding-right: 2rem;
+   }
+
+   .main__intro-title,
+   .main__intro-text{
+    font-size: 200%;
+    text-align:start;
+   }
+   
+   .main__intro-text{
+    font-size: 120%;
+   }
+
+   button{
+    width: 35%;
+    height: 3rem;
+    font-size: 120%;
+  }
+
+  .main__intro-image,
+.main__gallery-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+
+}
+
+.main__div--features{
+    gap: 10%;
+}
+
+  .main__feature-title{
+    font-size: 130%;
+  }
+
+  .main__feature-text{
+    font-size: 120%;
+  }
+
+  .main__feature{
+    height: 50%;
+  }
+
+  .main__gallery-content{
+    padding-left: 5rem;
+  }
+
+  .main__gallery-title{
+    width: 70%;
+    font-size: 140%;
+    text-align: start;
+    padding-bottom: 1.5em;
+  }
+
+  .main__gallery-text{
+    text-align: start;
+    font-size: 120%;
+  }
+
+  .main__section--details{
+    display: block;
+    
+}
+
+.main__details-content{
+    display: flex;
+    gap: 10%;
+    padding : 4rem 0 2rem 0;
+}
+
+.main__details-title,
+.main__form-title{
+    font-size: 140%;
+}
+ 
+.main__details-text{
+    border: none;
+    font-size: 120%;
+}
+
+.main__details-item{
+    background-color:#faf3e9 ;
+    padding: 2% 0;
+    width: 180%;
+    height: 3rem;    
+}
+
+.main__section--form{
+    display: inline-block;
+    width: 85%;
+}
+
+.champstext{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+label{
+    font-size: 120%;
+}
+
+form{
+    width: 60%;
+}
+
+.textare{
+    width: 70%;
+}
+
+textarea{
+    width: 70%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+footer .footer__text{
+    padding: 2rem 0;
+    font-size: 120%;
+}
+
+footer .footer__socials{
+    display: flex;
+    padding: 1.5em 0 0 4em;
+}
+
+footer a{
+    width: 8%;
+}
+
+footer .footer__social-icon{
+    width: 25%;
+    height: auto;
+}
+
+
 }
