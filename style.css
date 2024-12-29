@@ -40,6 +40,10 @@ nav a {
     padding: 2rem 1rem;
 }
 
+.main__intro-content{
+    padding-bottom: 4rem;
+}
+
 .main__intro-title{
     padding: 1rem 0 1.5rem 0;
     text-align: center;
@@ -56,16 +60,15 @@ section {
     margin-right: auto;
     max-width: 100%;
     height: auto;
-
 }
 
 .main__div--features{
-    background-color: #faf3e9;
-    
+    background-color: #faf3e9;   
 }
 
 .main__feature{
     border: 1px solid #3e3d3d;
+    border-radius: .5rem;
     margin-bottom: 1rem;
     padding: 1rem;
     width : 90%;
@@ -79,12 +82,12 @@ h2{
 
 p{
     text-align: center;
-    padding-top: 1rem;
+    padding: 1rem 0;
 }
 
 button{
     border: none;
-    border-radius: 0.5rem;
+    border-radius: .5em;
     font-weight: bold;
     color: #ffffff;
     background-color: #d92950;
@@ -118,10 +121,12 @@ button{
 }
 
 .main__details-text{
-    border: 2px solid #3e3d3d;
+    border: non;
+    border-radius: .5rem;
     margin-bottom: 1rem;
     padding: 1rem;
     height: auto;
+    background-color: #faf3e9;
 }
 
 .main__details-link{
@@ -134,11 +139,8 @@ button{
     font-size: 120%;
 }
 
-.main__section--form{
-    position: relative;
-    height: 25rem;
+.main__section--from{
     background-color:#faf3e9;
-   
 }
 
 .main__form{
@@ -156,21 +158,14 @@ button{
 }
 
 .main__form textarea{
-    border-radius: 0.3rem;
+    border-radius: .5em;
     background-color:#faf3e9;
     width: 160%;
     height: 5rem;
 }
 
-.btn  .btn__butonn{
-    width: 110%;
-    height: 1.8rem; 
-}
-
-.btn{
-    position: absolute;
-    top: 285%;
-    right: 22%;
+.main__form-button{
+    width: 106%;
 }
 
 footer{
@@ -193,174 +188,168 @@ footer .footer__social-icon{
     height: 30%;
 }
 
+/* Styles pour les écrans plus larges */
+@media (min-width: 1000px) {
 
-/* LA PARTIE MEDIA QUERY */
-
-@media screen and (min-width : 1280px) {
     .header{
-         padding: 1em 6rem;
-         align-items: center;
-    } 
-    
-    nav a {
-        font-size: 150%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 6rem;  
     }
     
     .footer__logo,
     .header__logo{
-        width: 15%;
+        width: 10%;
         height: auto;
     }
-   .main__section{
+    
+    .main__section {
         display: flex;
         flex-direction: row;
-        padding: 6rem 6rem;
-   }
-
-   .main__intro-content{
-        width: 45%;
-        padding-right: 2rem;
-   }
-
-   .main__intro-title,
-   .main__intro-text{
-    font-size: 200%;
-    text-align:start;
-   }
-   
-   .main__intro-text{
-    font-size: 120%;
-   }
-
-   button{
-    width: 35%;
-    height: 3rem;
-    font-size: 120%;
-  }
-
-  .main__intro-image,
-.main__gallery-image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    height: auto;
-
-}
-
-.main__div--features{
-    gap: 10%;
-}
-
-  .main__feature-title{
-    font-size: 130%;
-  }
-
-  .main__feature-text{
-    font-size: 120%;
-  }
-
-  .main__feature{
-    height: 50%;
-  }
-
-  .main__gallery-content{
-    padding-left: 5rem;
-  }
-
-  .main__gallery-title{
-    width: 70%;
-    font-size: 140%;
-    text-align: start;
-    padding-bottom: 1.5em;
-  }
-
-  .main__gallery-text{
-    text-align: start;
-    font-size: 120%;
-  }
-
-  .main__section--details{
-    display: block;
+        padding: 6rem;
+    }
     
+    .main__intro-content{
+      padding: 0 4rem 0 0;
+    }
+    
+    .main__intro-title{
+        padding: 1rem 0 1.5rem 0;
+        text-align:left;
+        font-size: 198%;
+        width: 80%;
+    }
+
+    .main__intro-text{
+        text-align: left;
+    }
+    
+    section {
+        padding: 0 1rem;
+    }
+    
+    .main__intro-image,
+    .main__gallery-image{
+        max-width: 70%;
+    }
+    
+    .main__div--features{
+        gap: 6%;
+        
+    }
+    
+    .main__feature{
+        margin-bottom: 1rem;
+        padding: 1rem;
+        width : 20%;
+        height: 7rem;
+    }
+    
+    h2{
+        text-align: center;
+        font-size: 100%;
+    }
+    
+    p{
+        text-align: lef;
+        padding-top: 1rem;
+    }
+    
+    button{
+        width: 18%;
+        height: 2rem;
+    }
+    
+    .main__button{
+        margin: 5% 2% 2% 0; 
+    }
+
+    .main__gallery-content{
+        margin: 0;
+        padding: 0 0 0 4rem;
+    }
+    
+    .main__section--gallery{
+        background-color: #3e3d3d;
+    }
+    
+    .main__gallery-title{
+        text-align: left;
+        font-size: 150%;
+        width: 70%;
+        padding-bottom: 1em;
+    }
+    
+    .main__gallery-text{
+        text-align: left;
+    }
+
+    .main__section--details{
+        flex-direction: column;
+    }
+    
+    .main__details-content{
+        display: flex;
+        gap: 5%;
+        padding: 2rem 2rem 2rem 15rem;
+        width:70%;
+    }
+
+    .main__details-link{
+        font-weight: bolder;
+        margin-right: 38%;
+    }
+    
+    .main__details-title,
+    .main__form-title{
+        font-size: 150%;
+    }
+    
+    .main__section--from{
+      flex-direction: column;
+    }
+
+    .main__identity{
+        display: flex;
+        gap: 22%;
+        padding-top:2rem ;
+        width: 180%;
+    }
+
+    .main__form div{
+        padding-bottom: 3%;
+    }
+    
+    .main__form input{
+        width: 140%;
+
+    }
+    
+    .main__form textarea{
+        width: 160%;
+        height: 5rem;
+    }
+    
+    .main__form-button{
+        margin-left: 110%;
+        width: 50%;
+    }
+    
+    footer{
+        padding: 3rem;
+    }
+    
+    footer .footer__socials{
+        padding: 1.5em 0 0 1em;
+    }
+    
+    footer .footer__social-icon{
+        width: 50%;
+        height: auto;
+    }
+
+    footer a {
+        width: 5%;
+    }
 }
 
-.main__details-content{
-    display: flex;
-    gap: 10%;
-    padding : 4rem 0 2rem 0;
-}
-
-.main__details-title,
-.main__form-title{
-    font-size: 140%;
-}
- 
-.main__details-text{
-    border: none;
-    font-size: 120%;
-}
-
-.main__details-item{
-    background-color:#faf3e9 ;
-    padding: 2% 0;
-    width: 180%;
-    height: 3rem;    
-}
-
-.main__section--form{
-    display: inline-block;
-    width: 85%;
-}
-
-.champstext{
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-}
-
-label{
-    font-size: 120%;
-}
-
-form{
-    width: 60%;
-}
-
-.textare{
-    width: 70%;
-}
-
-textarea{
-    width: 70%;
-}
-
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-}
-
-footer .footer__text{
-    padding: 2rem 0;
-    font-size: 120%;
-}
-
-footer .footer__socials{
-    display: flex;
-    padding: 1.5em 0 0 4em;
-}
-
-footer a{
-    width: 8%;
-}
-
-footer .footer__social-icon{
-    width: 25%;
-    height: auto;
-}
-
-
-}
