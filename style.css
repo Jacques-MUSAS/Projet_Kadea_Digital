@@ -1,355 +1,54 @@
- *{
-    box-sizing: content-box;
-    text-decoration: none;
-    list-style-type: none;
+*{
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 body{
-    font-family: "Poppins",sans-serif;
-}
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 1rem;  
-}
-
-nav .header__nav-list{
-    display: flex;
-    gap: 1rem; 
-}
-
-nav a {
-    font-weight: bold;
-    color:#282C34;
-}
-
-.footer__logo,
-.header__logo{
-    width: 40%;
-    height: auto;
-}
-
-.main__section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+.container{
+    padding: 1em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem 1rem;
 }
 
-.main__intro-content{
-    padding-bottom: 4rem;
+.header__nav-list{
+    display: flex;
+    gap: 1rem;
 }
 
-.main__intro-title{
-    padding: 1rem 0 1.5rem 0;
+.main__section{
+    padding: 4rem 0 2rem 0;
+}
+
+h1{
     text-align: center;
-}
-
-section {
-    padding: 0 1rem;
 }
 
 .main__intro-image,
 .main__gallery-image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 100%;
     height: auto;
 }
 
-.main__div--features{
-    background-color: #faf3e9;   
-}
-
-.main__feature{
-    border: 1px solid #3e3d3d;
-    border-radius: .5rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    width : 90%;
-    height: 7rem;
-}
-
-h2{
-    text-align: center;
-    font-size: 100%;
-}
-
 p{
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 button{
-    border: none;
-    border-radius: .5em;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #d92950;
-    width: 35%;
+    border-radius: .5rem;
+    background-color:brown;
+    width: 30%;
     height: 2rem;
 }
-
-.main__button{
-    margin:5% 2% 2% 0; 
-}
-
-.main__section--gallery{
-    background-color: #3e3d3d;
-}
-
-.main__gallery-title{
-    font-size: 110%;
-}
-
-.main__gallery-content{
-    color: #ffffff;
-    margin-top: 1rem;
-}
-
-.main__section--details{
-    padding: 2rem;
-}
-
-.main__details-content{
-    margin-top: 2rem;
-}
-
-.main__details-text{
-    border: non;
-    border-radius: .5rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    height: auto;
-    background-color: #faf3e9;
-}
-
-.main__details-link{
-    margin-right: 30%;
-    color :#d92950;
-}
-
-.main__details-title,
-.main__form-title{
-    font-size: 120%;
-}
-
-.main__section--from{
-    background-color:#faf3e9;
-}
-
-.main__form{
-    padding: 1rem 5rem 0 0; 
-}
-
-.main__form div{
-    padding-bottom: 3%;
-}
-
-.main__form input{
-    width: 160%;
-    background-color:#faf3e9;
-    border-radius: 0.3em;
-}
-
-.main__form textarea{
-    border-radius: .5em;
-    background-color:#faf3e9;
-    width: 160%;
-    height: 5rem;
-}
-
-.main__form-button{
-    width: 106%;
-}
-
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-footer .footer__socials{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5em 0 0 4em;
-}
-
-footer .footer__social-icon{
-    width: 30%;
-    height: 30%;
-}
-
-/* Styles pour les écrans plus larges */
-@media (min-width: 1000px) {
-
-    .header{
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 6rem;  
-    }
-    
-    .footer__logo,
-    .header__logo{
-        width: 10%;
-        height: auto;
-    }
-    
-    .main__section {
-        display: flex;
-        flex-direction: row;
-        padding: 6rem;
-    }
-    
-    .main__intro-content{
-      padding: 0 4rem 0 0;
-    }
-    
-    .main__intro-title{
-        padding: 1rem 0 1.5rem 0;
-        text-align:left;
-        font-size: 198%;
-        width: 80%;
-    }
-
-    .main__intro-text{
-        text-align: left;
-    }
-    
-    section {
-        padding: 0 1rem;
-    }
-    
-    .main__intro-image,
-    .main__gallery-image{
-        max-width: 70%;
-    }
-    
-    .main__div--features{
-        gap: 6%;
-        
-    }
-    
-    .main__feature{
-        margin-bottom: 1rem;
-        padding: 1rem;
-        width : 20%;
-        height: 7rem;
-    }
-    
-    h2{
-        text-align: center;
-        font-size: 100%;
-    }
-    
-    p{
-        text-align: lef;
-        padding-top: 1rem;
-    }
-    
-    button{
-        width: 18%;
-        height: 2rem;
-    }
-    
-    .main__button{
-        margin: 5% 2% 2% 0; 
-    }
-
-    .main__gallery-content{
-        margin: 0;
-        padding: 0 0 0 4rem;
-    }
-    
-    .main__section--gallery{
-        background-color: #3e3d3d;
-    }
-    
-    .main__gallery-title{
-        text-align: left;
-        font-size: 150%;
-        width: 70%;
-        padding-bottom: 1em;
-    }
-    
-    .main__gallery-text{
-        text-align: left;
-    }
-
-    .main__section--details{
-        flex-direction: column;
-    }
-    
-    .main__details-content{
-        display: flex;
-        gap: 5%;
-        padding: 2rem 2rem 2rem 15rem;
-        width:70%;
-    }
-
-    .main__details-link{
-        font-weight: bolder;
-        margin-right: 38%;
-    }
-    
-    .main__details-title,
-    .main__form-title{
-        font-size: 150%;
-    }
-    
-    .main__section--from{
-      flex-direction: column;
-    }
-
-    .main__identity{
-        display: flex;
-        gap: 22%;
-        padding-top:2rem ;
-        width: 180%;
-    }
-
-    .main__form div{
-        padding-bottom: 3%;
-    }
-    
-    .main__form input{
-        width: 140%;
-
-    }
-    
-    .main__form textarea{
-        width: 160%;
-        height: 5rem;
-    }
-    
-    .main__form-button{
-        margin-left: 110%;
-        width: 50%;
-    }
-    
-    footer{
-        padding: 3rem;
-    }
-    
-    footer .footer__socials{
-        padding: 1.5em 0 0 1em;
-    }
-    
-    footer .footer__social-icon{
-        width: 50%;
-        height: auto;
-    }
-
-    footer a {
-        width: 5%;
-    }
-}
-
